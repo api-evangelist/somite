@@ -1,19 +1,46 @@
 aid: somite
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/somite.png
 name: Somite
-description: Somite is a company surfaced as a portfolio company of khosla-ventures and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Somite (now operating as Cellular Intelligence) is an AI-native TechBio company
+  backed by Khosla Ventures building a universal virtual cell-signaling foundation model to
+  engineer cellular fate. In 2026 the company rebranded from Somite to Cellular Intelligence and
+  entered an agreement with Novo Nordisk to advance STEM-PD, a clinical-stage cell therapy for
+  Parkinson's disease that carries FDA Fast Track Designation. The company works at the intersection
+  of machine learning and regenerative medicine and does not currently publish a public developer API,
+  documentation, SDKs, or other machine-readable API surface.
 url: https://raw.githubusercontent.com/api-evangelist/somite/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - khosla-ventures
+x-former-name: Somite
+x-current-name: Cellular Intelligence
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-api-surface: none
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Biotechnology
+- Cell Therapy
+- Artificial Intelligence
+- Life Sciences
+- Regenerative Medicine
+- TechBio
+- Parkinson's Disease
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +48,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/somite-domain-security.yml
 - type: Website
+  url: https://www.cellularintelligence.com/
+- type: Website
+  name: Former Somite domain (redirects)
   url: https://www.somite.ai/
+- type: Blog
+  name: Cellular Intelligence News
+  url: https://www.cellularintelligence.com/news
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
